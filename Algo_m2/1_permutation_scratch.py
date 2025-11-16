@@ -1,8 +1,7 @@
-def permute(arr,left,right):
+def permute(arr,left,right): # here the  right is len(arr-1)
    #Base condition: if we fix all positions, print one permutation
-   if left == right:
-       print(arr)
-       
+   if left == right: # it means 1 position left or fixed all positions
+       print(arr)    
    else:
    #Try all possible elements for current position
      for i in range(left,right+1):
@@ -17,4 +16,5 @@ def permute(arr,left,right):
        
 arr=[1,2,3]
 permute(arr,0,len(arr)-1)
+
        
